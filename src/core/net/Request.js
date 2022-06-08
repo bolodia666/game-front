@@ -1,13 +1,13 @@
 import UserModel from 'core/models/UserModel'
 
 function init() {
-	const action = '/session/init'
+	const action = '/game/session/init'
 	const params = {}
 	return { action, params }
 }
 function play() {
 	const { sessionId } = UserModel
-	const action = '/session/play'
+	const action = '/game/session/play'
 	const params = { sessionId }
 	return { action, params }
 }
