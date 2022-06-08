@@ -12,7 +12,7 @@ function create() {
 	update()
 	function update() {
 		const { balance } = UserModel
-		textField.text = `Balance: ${balance}`
+		textField.text = `Balance: ${balance}\nBet:1`
 	}
 	return { container }
 }
