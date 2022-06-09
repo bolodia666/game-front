@@ -7,7 +7,7 @@ import CommandNotify from 'core/observers/notifications/CommandNotify'
 function loadRessources() {
 	const loader = PIXI.Loader.shared
 
-	loader.add(Paths.horseSpine)
+	loader.add(Paths.horseSpine).add(Paths.playButton)
 	loader.onError.add(reportError)
 	loader.load()
 
