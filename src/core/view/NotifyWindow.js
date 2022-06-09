@@ -16,7 +16,8 @@ function create() {
 	ViewObserver.on(ViewNotify.RESIZE_APP, center)
 
 	function showRoundResult() {
-		notifyTextField.text = RoundModel.isWin ? Texts.win : Texts.lose
+		const { win, bet } = RoundModel
+		notifyTextField.text = win ? `${Texts.win} ${win}` : `${Texts.lose} ${bet}`
 		center()
 	}
 	function clear() {

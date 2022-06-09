@@ -13,7 +13,8 @@ async function init() {
 async function play() {
 	const response = await Fetch.send(Request.play())
 	RoundModel.horses = response.round.horses
-	RoundModel.isWin = response.round.horses % 2
+	RoundModel.win = parseFloat(response.round.win)
+	RoundModel.bet = response.round.bet
 	UserModel.balance = response.user.balance
 	ViewObserver.emit(ViewNotify.START_ROUND)
 }

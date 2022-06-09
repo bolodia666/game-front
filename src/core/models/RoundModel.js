@@ -1,6 +1,7 @@
 const RoundModel = {
 	horses: 0,
-	isWin: false,
+	win: 0,
+	bet: 0
 }
 
 export default RoundModel
