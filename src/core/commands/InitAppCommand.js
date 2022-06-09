@@ -15,7 +15,7 @@ async function execute() {
 		antialias: true,
 		width: AppSettings.appWidth,
 		height: AppSettings.appHeight,
-		backgroundColor: AppSettings.appBgColor,
+		backgroundAlpha: 0,
 		resolution: window.devicePixelRatio || 1,
 		view: document.getElementById('game')
 	})

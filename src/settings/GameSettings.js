@@ -1,9 +1,9 @@
 const GameSettings = {
 	horse: {
-		walkDistance: 100,
-		walkDesire: 0.2,
-		walkInterval: 1000,
-		runOutDistance: 200
+		walkDistance: 300,
+		walkInterval: 200,
+		runOutDistance: 200,
+		animDuration: 2
 	},
 	margine: 20
 }
